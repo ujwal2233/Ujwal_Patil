@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ujwal Patil's Portfolio</title>
+    <meta name="description" content="Futuristic portfolio of Ujwal Patil, a DS/ML Developer and tech enthusiast">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        .download-resume {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #00ffff;
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-resume:hover {
+            background-color: #ff00ff;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <article class="profile-card">
+            <header class="profile-header">
+                <img src="profile.jpg" alt="Profile Picture of Ujwal Patil" class="profile-img">
+                <h1>Ujwal Patil</h1>
+                <p class="designation">Software Developer</p>
+            </header>
+            
+            <section class="about-section">
+                <p class="bio">Innovative third-year Computer Engineering student and passionate software developer</p>
+            </section>
+            
+            <section class="social-section">
+                <div class="social-links">
+                    <a href="https://x.com/ujwal3062" aria-label="Twitter Profile">
+                        <img src="twitter.png" alt="Twitter Icon">
+                    </a>
+                    <a href="https://www.instagram.com/ujwalpatil2233/" aria-label="Instagram Profile">
+                        <img src="instagram.png" alt="Instagram Icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/ujwal-patil-1840b2255/" aria-label="LinkedIn Profile">
+                        <img src="linkedin.png" alt="LinkedIn Icon">
+                    </a>
+                    <a href="https://github.com/ujwal2233" aria-label="GitHub Profile">
+                        <img src="github.png" alt="GitHub Icon">
+                    </a>
+                    <a href="mailto:ujwalpatil2233@gmail.com" aria-label="Email Contact">
+                        <img src="gmail.png" alt="Email Icon">
+                    </a>
+                </div>
+            </section>
+
+            <section class="buttons-section">
+                <a href="Resume.pdf" download="Ujwal_Patil_Resume.pdf" class="download-resume">Download Resume</a>
+            </section>
+        </article>
+    </main>
+
+    <script>
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.classList.toggle('hidden-section');
+        }
+    </script>
+</body>
+</html>
